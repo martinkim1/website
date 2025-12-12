@@ -14,7 +14,13 @@ body {
     font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
     line-height: 1.6;
     color: #222;
-    background-color: #f5f5f5;
+    background-color: #f9f9f9;
+    /* Warm Gray Background */
+}
+
+/* Premium Typography Utility */
+.serif-font {
+    font-family: 'Nanum Myeongjo', serif;
 }
 
 /* 3. Links */
@@ -26,14 +32,13 @@ a {
 }
 
 a:hover {
-    color: #0f1a30;
-    /* Darker Navy */
+    color: #c5a059;
+    /* Antique Gold Hover */
 }
 
 /* 4. Container */
 .container {
     max-width: 1140px;
-    /* 1100~1200px range */
     margin: 0 auto;
     padding: 0 20px;
     width: 100%;
@@ -57,12 +62,14 @@ section {
     scroll-margin-top: 90px;
 }
 
+/* Card Design Enhancement (Depth & Premium Feel) */
 .card-section {
     background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    /* Card-like appearance */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    /* Softer, luxurious shadow */
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    /* Subtle border */
     border-radius: 8px;
-    /* Optional: rounded corners for card look */
 }
 
 /* Header */
@@ -240,14 +247,17 @@ footer a:hover {
 }
 
 #hero h1 {
-    font-size: 40px;
+    font-family: 'Nanum Myeongjo', serif;
+    /* Serif for Main Title */
+    font-weight: 800;
+    font-size: 42px;
+    letter-spacing: -0.5px;
     line-height: 1.4;
     margin-bottom: 24px;
     color: #fff;
     /* White Text */
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    /* Shadow for legibility */
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    /* Deep shadow */
     word-break: keep-all;
 }
 
@@ -264,6 +274,10 @@ footer a:hover {
     line-height: 1.6;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     word-break: keep-all;
+    display: inline-block;
+    /* Center the text block itself */
+    text-align: left;
+    /* Align text content to left */
 }
 
 /* Keyframes for Cross-fade */
@@ -312,12 +326,17 @@ footer a:hover {
 .btn.primary {
     background-color: #1a2b4c;
     color: #fff;
+    border: 1px solid #1a2b4c;
 }
 
 .btn.primary:hover {
     background-color: #0f1a30;
+    border-color: #c5a059;
+    /* Gold Border on Hover */
+    color: #c5a059;
+    /* Gold Text on Hover */
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(26, 43, 76, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .btn.secondary {
@@ -335,6 +354,8 @@ footer a:hover {
 section h2 {
     font-size: 32px;
     font-weight: 700;
+    letter-spacing: -1px;
+    /* Tight tracking */
     text-align: center;
     margin-bottom: 20px;
     color: #1a2b4c;
@@ -445,15 +466,17 @@ ol.process-list li strong {
     background-color: #fff;
     padding: 30px 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #eee;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .service-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    border-color: #c5a059;
+    /* Gold Border Highlight */
 }
 
 .service-card h3 {
@@ -468,6 +491,74 @@ ol.process-list li strong {
     color: #555;
     line-height: 1.6;
     word-break: keep-all;
+}
+
+/* Social Buttons */
+.social-cta {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a2b4c;
+    margin-top: 40px;
+    margin-bottom: 12px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 0;
+}
+
+.btn-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    /* Space between icon and text */
+    padding: 14px 24px;
+    border-radius: 8px;
+    color: #fff !important;
+    /* Force white text */
+    font-weight: 600;
+    font-size: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+    /* Mobile full width */
+    max-width: 280px;
+}
+
+.btn-naver {
+    background-color: #03C75A;
+    /* Naver Green */
+    border: none;
+}
+
+.btn-naver:hover {
+    background-color: #02b351;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(3, 199, 90, 0.3);
+}
+
+.btn-insta {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    /* Instagram Gradient */
+    border: none;
+}
+
+.btn-insta:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(220, 39, 67, 0.3);
+}
+
+/* Mobile Responsive adjustment for social buttons */
+@media (max-width: 768px) {
+    .social-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
 }
 
 /* Contact Section */
