@@ -166,6 +166,7 @@ footer a:hover {
 }
 
 /* Hero Section */
+/* Hero Section */
 #hero {
     position: relative;
     display: flex;
@@ -242,8 +243,14 @@ footer a:hover {
     color: #fff;
     /* White Text */
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     /* Shadow for legibility */
     word-break: keep-all;
+}
+
+.hero-sub {
+    white-space: nowrap;
+    display: inline-block;
 }
 
 #hero p {
@@ -510,7 +517,7 @@ ol.process-list li strong {
 }
 
 .contact-note {
-    text-align: center;
+    text-align: left;
     font-size: 16px;
     color: #666;
     background-color: #fff;
@@ -627,6 +634,10 @@ ol.process-list li strong {
         margin-bottom: 30px;
     }
 
+    .section-subtitle {
+        margin-bottom: 30px;
+    }
+
     /* Hero Mobile */
     #hero {
         min-height: auto;
@@ -637,6 +648,11 @@ ol.process-list li strong {
         font-size: 26px;
         /* Smaller font for natural line break */
         line-height: 1.3;
+    }
+
+    /* Adjust subtitle size to fit in one line on mobile */
+    .hero-sub {
+        font-size: 4.5vw;
     }
 
     #hero p {

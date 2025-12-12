@@ -6,17 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>금고백화점 – 중고 금고 판매 · 금고 수리 · 금고 운반 (30년 경력 금고 전문점)</title>
 
-  <!-- SEO Meta Tags -->
   <meta name="description"
     content="30년 경력 금고 전문점 금고백화점. 중고 금고 판매, 금고 수리, 금고 운반, 금고 개방까지 한 번에 해결해 드립니다. 서울, 경기 전 지역 출장 가능.">
   <meta name="keywords" content="금고 수리, 중고 금고, 금고 운반, 금고 개방, 금고 판매, 서울 금고, 금고 백화점, 영일금고, 범일금고, 선일금고, 금고 열기, 금고 다이얼">
   <meta name="robots" content="index, follow">
 
-  <!-- Search Engine Verification (Placeholders) -->
-  <meta name="naver-site-verification" content="" /> <!-- 네이버 서치어드바이저 검증 코드 입력 -->
-  <meta name="google-site-verification" content="" /> <!-- 구글 서치 콘솔 검증 코드 입력 -->
+  <link rel="canonical" href="https://goldsafe.co.kr">
 
-  <!-- Open Graph (Social Sharing) -->
+  <meta name="naver-site-verification" content="" />
+  <meta name="google-site-verification" content="" />
+
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://goldsafe.co.kr">
   <meta property="og:title" content="금고백화점 – 30년 경력 금고의 모든 것">
@@ -24,22 +23,49 @@
   <meta property="og:image" content="https://goldsafe.co.kr/images/OpenGraph.png">
   <meta property="og:site_name" content="금고백화점">
 
-  <!-- Favicon -->
   <link rel="icon" href="images/IconGoldsafe.png" type="image/png">
   <link rel="apple-touch-icon" href="images/IconGoldsafe.png">
 
   <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Locksmith",
+    "name": "금고백화점",
+    "image": "https://goldsafe.co.kr/images/sunil_1.png",
+    "description": "30년 경력의 금고 전문점. 중고 금고 판매, 수리, 운반, 개방 서비스 제공.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "서울특별시 중구 청구로 81",
+      "addressLocality": "Jung-gu",
+      "addressRegion": "Seoul",
+      "postalCode": "04609",
+      "addressCountry": "KR"
+    },
+    "telephone": "+82-10-4149-6467",
+    "url": "https://goldsafe.co.kr",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "19:00"
+      }
+    ],
+    "priceRange": "$$"
+  }
+  </script>
 </head>
 
 <body>
 
-  <!-- 상단 헤더 / 네비게이션 -->
   <header id="top" class="site-header">
     <div class="container nav-container">
       <div class="logo">
         <a href="#top">금고백화점</a>
       </div>
-      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="메뉴 열기">
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="메뉴 열기" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
@@ -56,7 +82,6 @@
 
   <main>
 
-    <!-- 1. 메인 Hero 섹션 -->
     <section id="hero">
       <div class="hero-slider">
         <div class="slide slide-1"></div>
@@ -64,10 +89,11 @@
       </div>
       <div class="hero-overlay"></div>
       <div class="container hero-content">
-        <h1>30년 경력 금고 전문점<br>중고 금고 판매 · 금고 수리 · 금고 운반</h1>
+        <h1>30년 경력 금고 전문점<br><span class="hero-sub"></span>중고&nbsp;금고&nbsp;판매 · 금고&nbsp;수리 · 금고&nbsp;운반</span></h1>
         <p>
           가정용부터 업소용까지, 믿고 맡길 수 있는 동네 금고 장인입니다.<br>
-          급한 금고 고장, 문이 안 열림, 이사나 이전 설치까지 한 번에 해결해 드립니다.
+          급한 금고 고장, 문이 안 열림, 이사나 이전 설치까지 한 번에 해결해 드립니다.<br>
+          서울·경기 전 지역 출장 가능합니다
         </p>
         <div class="hero-buttons">
           <a href="tel:010-4149-6467" class="btn primary">📞 전화 상담하기</a>
@@ -76,7 +102,6 @@
       </div>
     </section>
 
-    <!-- 2. 서비스 요약 섹션 -->
     <section id="services" class="card-section">
       <div class="container">
         <h2>주요 서비스</h2>
@@ -103,7 +128,6 @@
       </div>
     </section>
 
-    <!-- 3. 중고 금고 판매 상세 섹션 -->
     <section id="used-safe" class="card-section">
       <div class="container">
         <h2>중고금고 판매</h2>
@@ -112,6 +136,13 @@
           <strong>중고 금고 판매</strong>를 병행해 왔습니다. 사용 기간은 길어도 상태가 좋은 금고만 선별하여
           내부를 점검하고 정비한 뒤 판매합니다.
         </p>
+
+        <p>
+          금고백화점은 <strong>선일금고, 범일금고, 영일금고</strong> 등 국내에서 많이 사용되는
+          <strong>주요 금고 브랜드</strong>를 오래 다뤄온 경험이 있습니다.
+          보유 중이신 금고 브랜드를 알려주시면, 수리 가능 여부와 교체·중고 매입 상담도 함께 도와드립니다.
+        </p>
+
         <p>
           매장 방문이 어려운 분들은 카카오톡이나 문자로 필요한 금고의
           <strong>용도(가정/사무실/업소)</strong>, <strong>크기</strong>, <strong>예산</strong>을 알려주시면,
@@ -123,25 +154,23 @@
           <li>크기: 소형 / 중형 / 대형</li>
           <li>가격대: 예산에 맞춰 여러 모델 제안</li>
         </ul>
-
-        <!-- TODO: 나중에 실제 중고 금고 사진을 images/ 폴더에 넣고 아래에 img 태그로 추가 -->
       </div>
     </section>
 
-    <!-- 4. 금고 수리 상세 섹션 -->
     <section id="repair" class="card-section">
       <div class="container">
         <h2>금고수리</h2>
         <p>
           갑자기 <strong>금고 문이 안 열리거나</strong>, <strong>비밀번호를 잊어버리거나</strong>,
           <strong>열쇠가 부러진 경우</strong>, 당황스러울 수밖에 없습니다. 금고백화점은
-          30년 동안 현장에서 직접 <strong>금고 수리</strong>를 진행해 오면서 다양한 상황을 해결해 왔습니다.
+          30년 동안 현장에서 직접 <strong>금고 수리</strong>와 <strong>금고 개방</strong>을 진행해 오면서
+          다양한 상황을 해결해 왔습니다.
         </p>
 
         <p>자주 발생하는 고장 유형 예시는 다음과 같습니다.</p>
 
         <ul class="info-list">
-          <li>비밀번호를 잊어버려 금고가 열리지 않는 경우</li>
+          <li>비밀번호를 잊어버려 금고가 열리지 않는 경우 (개방 작업)</li>
           <li>손잡이는 돌아가는데 문이 안 열리는 경우</li>
           <li>열쇠가 부러지거나, 잃어버린 경우</li>
           <li>오래되어 잠금 장치가 뻑뻑해진 경우</li>
@@ -154,7 +183,6 @@
       </div>
     </section>
 
-    <!-- 5. 금고 운반 상세 섹션 -->
     <section id="moving" class="card-section">
       <div class="container">
         <h2>금고운반</h2>
@@ -179,12 +207,11 @@
       </div>
     </section>
 
-    <!-- 6. 30년 경력 / 장인 소개 -->
     <section id="about" class="card-section">
       <div class="container">
         <h2>30년 금고 장인의 손길</h2>
         <p>
-          금고백화점은 <strong>30년 동안 한 자리에서 금고 장사</strong>를 이어오신 가게입니다.
+          금고백화점은 <strong>30년 동안 한 자리에서 금고 장사</strong>를 이어오 가게입니다.
           수많은 가정과 가게, 회사의 금고를 판매·수리·운반하면서
           “고객의 소중한 자산을 지킨다”는 마음으로 항상 일을 해 왔습니다.
         </p>
@@ -195,22 +222,6 @@
       </div>
     </section>
 
-    <!-- 7. 작업 사례 / 후기
-    <section id="cases" class="card-section">
-      <div class="container">
-        <h2>작업 사례 및 후기</h2>
-        <p>아래는 금고백화점에서 진행한 작업 중 일부 예시입니다. (사진과 문구는 추후 실제 사례로 교체)</p>
-
-        <ul class="case-list">
-          <li>○○동 사무실 금고 수리 – 문이 안 열리는 고장 해결</li>
-          <li>△△아파트 가정용 금고 운반 – 3층 계단 운반 후 재설치</li>
-          <li>□□상가 중고 금고 판매 및 설치 – 업소용 대형 금고 납품</li>
-        </ul>
-      </div>
-    </section>
-    -->
-
-    <!-- 8. 이용 절차 -->
     <section id="process" class="card-section">
       <div class="container">
         <h2>이용 절차</h2>
@@ -223,7 +234,6 @@
       </div>
     </section>
 
-    <!-- 9. 문의 / 연락처 / 위치 -->
     <section id="contact" class="card-section">
       <div class="container">
         <h2>문의 및 연락처</h2>
@@ -240,36 +250,38 @@
         </ul>
 
         <p class="contact-note">
-          문자나 카카오톡으로 금고 사진과 함께 상황을 보내주시면, 보다 정확한 안내가 가능합니다.
+          문자나 카카오톡으로 금고 사진과 함께 상황을 보내주시면, 보다 정확한 안내가 가능합니다.<br>
+          서울·경기 전 지역 출장 가능하며, 지역에 따라 출장비가 달라질 수 있습니다.
         </p>
       </div>
     </section>
 
   </main>
 
-  <!-- 푸터 -->
   <footer>
     <div class="container">
       <p>© 금고백화점. 중고 금고 판매 · 금고 수리 · 금고 운반 전문.</p>
     </div>
   </footer>
 
-  <!-- 모바일 하단 고정 상담 바 -->
   <div class="stickybar">
     <a href="tel:010-4149-6467" class="btn primary">📞 전화 상담</a>
     <a href="#contact" class="btn secondary">💬 카카오톡 문의</a>
   </div>
-  </div>
 
   <script>
-    // 모바일 메뉴 토글 스크립트
+    // 모바일 메뉴 토글 스크립트 (접근성 기능 추가)
     const mobileBtn = document.getElementById('mobileMenuBtn');
     const navMenu = document.getElementById('navMenu');
     const navLinks = document.querySelectorAll('.nav a');
 
     mobileBtn.addEventListener('click', () => {
-      mobileBtn.classList.toggle('active');
+      // active 클래스 토글
+      const isActive = mobileBtn.classList.toggle('active');
       navMenu.classList.toggle('active');
+
+      // 스크린리더를 위한 상태 업데이트
+      mobileBtn.setAttribute('aria-expanded', isActive ? 'true' : 'false');
     });
 
     // 메뉴 클릭 시 자동으로 닫기
@@ -277,6 +289,7 @@
       link.addEventListener('click', () => {
         mobileBtn.classList.remove('active');
         navMenu.classList.remove('active');
+        mobileBtn.setAttribute('aria-expanded', 'false');
       });
     });
   </script>
