@@ -3,12 +3,11 @@
 ## 1. 핵심 파일 구조
 ```text
 GoldSafe/
- ├─ site/               # 웹 서버 배포 루트 (Web Root)
- │   ├─ index.html      # 메인 단일 페이지
- │   ├─ style.css       # 전체 스타일 시트 (슬라이드쇼 애니메이션 포함)
- │   └─ images/         # 이미지 리소스 폴더
- │       ├─ sunil_1.png
- │       └─ sunil_2.png
+ ├─ index.html      # 메인 단일 페이지
+ ├─ style.css       # 전체 스타일 시트 (슬라이드쇼 애니메이션 포함)
+ └─ images/         # 이미지 리소스 폴더
+     ├─ sunil_1.png
+     └─ sunil_2.png
  ├─ README.md           # 프로젝트 안내
  └─ CONTEXT.md          # 기술 명세 문서
 ```
