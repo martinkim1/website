@@ -34,4 +34,5 @@
 - **연락처 연결**: 전화 걸기(`tel:`) 및 문자 보내기 기능 내장
 
 ## 6. Github 링크
-- (여기에 레포지토리 주소를 입력하세요)
+- https://github.com/martinkim1/website.git
+
