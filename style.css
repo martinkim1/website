@@ -463,7 +463,8 @@ ol.process-list li strong {
 
 .service-card {
     flex: 1;
-    background-color: #fff;
+    background-color: #f0f4f8;
+    /* Light Blue */
     padding: 30px 20px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
